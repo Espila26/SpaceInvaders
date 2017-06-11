@@ -7,61 +7,40 @@
     tools:context="una.ac.cr.spaceinvaders.Inicio"
     android:background="@drawable/inicio">
 
-    <GridLayout
-        android:layout_width="576dp"
-        android:layout_height="295dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:columnCount="8"
-        android:foregroundGravity="center"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="8dp">
 
-        <AbsoluteLayout
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_column="0"
-            android:layout_gravity="center"
-            android:layout_row="0">
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="@string/titulo"
+        android:gravity="center"
+        android:textColor="@color/gris"
+        android:textSize="42dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp" />
 
+    <Button
+        android:id="@+id/buttonInicio"
+        android:layout_width="195dp"
+        android:layout_height="111dp"
+        android:textSize="19dp"
+        android:background="@drawable/border"
+        android:text="@string/botonInicio"
+        android:textColor="@color/gris"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="Iniciar"/>
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:text="@string/titulo"
-                android:gravity="center"
-                android:textColor="@color/gris"
-                android:textSize="40dp" />
-        </AbsoluteLayout>
+    <Button
+        android:id="@+id/buttonFinal"
+        android:layout_width="195dp"
+        android:layout_height="111dp"
+        android:textSize="19dp"
+        android:background="@drawable/border"
+        android:text="@string/botonFinal"
+        android:textColor="@color/gris"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="Tabla"/>
 
-        <AbsoluteLayout
-            android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:layout_column="0"
-            android:layout_gravity="center"
-            android:layout_row="1">
-
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="195dp"
-                android:layout_height="111dp"
-                android:layout_x="340dp"
-                android:layout_y="10dp"
-                android:background="@drawable/border"
-                android:text="Button"
-                android:textColor="@color/gris" />
-
-            <Button
-                android:id="@+id/button"
-                android:layout_width="195dp"
-                android:layout_height="111dp"
-                android:layout_x="18dp"
-                android:layout_y="10dp"
-                android:background="@drawable/border"
-                android:text="Button"
-                android:textColor="@color/gris" />
-
-        </AbsoluteLayout>
-    </GridLayout>
 </android.support.constraint.ConstraintLayout>
